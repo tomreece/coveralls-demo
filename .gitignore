@@ -1,0 +1,8 @@
+.idea
+composer.phar
+vendor/*
+.env
+_generated
+AcceptanceTester.php
+cghooks.lock
+src/Magento/FunctionalTestingFramework/Group/*.php
