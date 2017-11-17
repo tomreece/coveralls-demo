@@ -58,6 +58,7 @@ class TestGenerator
             DIRECTORY_SEPARATOR
         );
         $this->cests = $cests;
+        $this->newLongFunctionToTriggerCoveralls();
     }
 
     /**
@@ -1507,7 +1508,6 @@ class TestGenerator
         $dog4 = 1 + $dog3;
         $foo = new TomObject();
         $foo->someNewPublicFunction();
-        $this->newLongFunctionToTriggerCoveralls();
         return $factorial - $dog4;
     }
 }
