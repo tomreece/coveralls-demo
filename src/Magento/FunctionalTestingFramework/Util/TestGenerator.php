@@ -6,6 +6,7 @@
 
 namespace Magento\FunctionalTestingFramework\Util;
 
+use Magento\FunctionalTestingFramework\Cest\Objects\TomObject;
 use Magento\FunctionalTestingFramework\DataGenerator\Objects\EntityDataObject;
 use Magento\FunctionalTestingFramework\Exceptions\TestReferenceException;
 use Magento\FunctionalTestingFramework\Test\Handlers\CestObjectHandler;
@@ -57,6 +58,8 @@ class TestGenerator
             DIRECTORY_SEPARATOR
         );
         $this->cests = $cests;
+        $foo = new TomObject();
+        $foo->someNewPublicFunction();
     }
 
     /**
