@@ -1,1 +1,0 @@
-dev/tests/functional/_generated/BasicFunctionalCest.php:BasicFunctionalTest
