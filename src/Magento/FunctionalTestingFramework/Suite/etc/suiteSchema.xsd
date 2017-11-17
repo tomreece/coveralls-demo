@@ -7,7 +7,7 @@
 -->
 
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:include schemaLocation="../../Test/etc/testSchema.xsd"/>
+    <xs:include schemaLocation="../../Cest/etc/testSchema.xsd"/>
     <xs:element name="suites" type="suiteConfigType"/>
     <xs:complexType name="groupSuiteOptionType">
         <xs:simpleContent>
