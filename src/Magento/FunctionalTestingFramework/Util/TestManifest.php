@@ -6,7 +6,7 @@
 
 namespace Magento\FunctionalTestingFramework\Util;
 
-use Magento\FunctionalTestingFramework\Test\Objects\TestObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\TestObject;
 
 class TestManifest
 {

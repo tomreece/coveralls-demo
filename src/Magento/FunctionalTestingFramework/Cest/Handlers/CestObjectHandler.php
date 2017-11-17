@@ -3,13 +3,13 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Magento\FunctionalTestingFramework\Test\Handlers;
+namespace Magento\FunctionalTestingFramework\Cest\Handlers;
 
 use Magento\FunctionalTestingFramework\ObjectManager\ObjectHandlerInterface;
 use Magento\FunctionalTestingFramework\ObjectManagerFactory;
-use Magento\FunctionalTestingFramework\Test\Objects\CestObject;
-use Magento\FunctionalTestingFramework\Test\Parsers\TestDataParser;
-use Magento\FunctionalTestingFramework\Test\Util\CestObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Objects\CestObject;
+use Magento\FunctionalTestingFramework\Cest\Parsers\TestDataParser;
+use Magento\FunctionalTestingFramework\Cest\Util\CestObjectExtractor;
 
 /**
  * Class CestObjectHandler

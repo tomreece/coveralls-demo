@@ -9,10 +9,10 @@ namespace Magento\FunctionalTestingFramework\Util;
 use Magento\FunctionalTestingFramework\Cest\Objects\TomObject;
 use Magento\FunctionalTestingFramework\DataGenerator\Objects\EntityDataObject;
 use Magento\FunctionalTestingFramework\Exceptions\TestReferenceException;
-use Magento\FunctionalTestingFramework\Test\Handlers\CestObjectHandler;
-use Magento\FunctionalTestingFramework\Test\Objects\ActionObject;
+use Magento\FunctionalTestingFramework\Cest\Handlers\CestObjectHandler;
+use Magento\FunctionalTestingFramework\Cest\Objects\ActionObject;
 use Magento\FunctionalTestingFramework\DataGenerator\Handlers\DataObjectHandler;
-use Magento\FunctionalTestingFramework\Test\Objects\CestObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\CestObject;
 use Magento\FunctionalTestingFramework\Util\Filesystem\DirSetupUtil;
 
 class TestGenerator
@@ -60,6 +60,7 @@ class TestGenerator
         $this->cests = $cests;
         $foo = new TomObject();
         $foo->someNewPublicFunction();
+        $this->newLongFunctionToTriggerCoveralls();
     }
 
     /**
@@ -148,7 +149,7 @@ class TestGenerator
      * Assemble the entire PHP string for a single Test based on a Cest Object.
      * Create all of the PHP strings for a Test. Concatenate the strings together.
      *
-     * @param \Magento\FunctionalTestingFramework\Test\Objects\CestObject $cestObject
+     * @param \Magento\FunctionalTestingFramework\Cest\Objects\CestObject $cestObject
      * @throws TestReferenceException
      * @return string
      */
@@ -1490,5 +1491,13 @@ class TestGenerator
         if (substr($paramArray, 0, 1) != "[" || substr($paramArray, strlen($paramArray)-1, 1)!= "]") {
             throw new TestReferenceException("parameterArray must begin with `[` and end with `]");
         }
+    }
+
+    /**
+     * This is a new function to do stuff in the generator and reduce verification coverage
+     */
+    private function newLongFunctionToTriggerCoveralls()
+    {
+
     }
 }

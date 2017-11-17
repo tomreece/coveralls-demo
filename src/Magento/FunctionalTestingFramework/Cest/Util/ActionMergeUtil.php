@@ -4,12 +4,12 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\FunctionalTestingFramework\Test\Util;
+namespace Magento\FunctionalTestingFramework\Cest\Util;
 
 use Magento\FunctionalTestingFramework\Exceptions\TestReferenceException;
 use Magento\FunctionalTestingFramework\Exceptions\XmlException;
-use Magento\FunctionalTestingFramework\Test\Handlers\ActionGroupObjectHandler;
-use Magento\FunctionalTestingFramework\Test\Objects\ActionObject;
+use Magento\FunctionalTestingFramework\Cest\Handlers\ActionGroupObjectHandler;
+use Magento\FunctionalTestingFramework\Cest\Objects\ActionObject;
 
 /**
  * Class ActionMergeUtil

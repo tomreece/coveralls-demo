@@ -11,10 +11,10 @@ use Magento\FunctionalTestingFramework\ObjectManagerFactory;
 use Magento\FunctionalTestingFramework\Suite\Objects\SuiteObject;
 use Magento\FunctionalTestingFramework\Suite\Parsers\SuiteDataParser;
 use Magento\FunctionalTestingFramework\Suite\Util\SuiteObjectExtractor;
-use Magento\FunctionalTestingFramework\Test\Handlers\CestObjectHandler;
-use Magento\FunctionalTestingFramework\Test\Objects\CestObject;
-use Magento\FunctionalTestingFramework\Test\Util\CestHookObjectExtractor;
-use Magento\FunctionalTestingFramework\Test\Util\CestObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Handlers\CestObjectHandler;
+use Magento\FunctionalTestingFramework\Cest\Objects\CestObject;
+use Magento\FunctionalTestingFramework\Cest\Util\CestHookObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Util\CestObjectExtractor;
 use Magento\Ui\Test\Unit\Component\PagingTest;
 
 /**

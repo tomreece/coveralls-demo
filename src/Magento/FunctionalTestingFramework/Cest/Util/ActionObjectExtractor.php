@@ -4,10 +4,10 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\FunctionalTestingFramework\Test\Util;
+namespace Magento\FunctionalTestingFramework\Cest\Util;
 
 use Magento\FunctionalTestingFramework\Exceptions\XmlException;
-use Magento\FunctionalTestingFramework\Test\Objects\ActionObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\ActionObject;
 
 /**
  * Class ActionObjectExtractor

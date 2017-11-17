@@ -7,7 +7,7 @@
 -->
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="../../../../../src/Magento/FunctionalTestingFramework/Test/etc/testSchema.xsd">
+        xsi:noNamespaceSchemaLocation="../../../../../src/Magento/FunctionalTestingFramework/Cest/etc/testSchema.xsd">
     <cest name="ActionGroupFunctionalCest">
         <annotations>
             <severity value="CRITICAL"/>

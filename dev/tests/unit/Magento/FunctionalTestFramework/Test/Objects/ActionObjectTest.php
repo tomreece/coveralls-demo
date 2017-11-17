@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace tests\unit\Magento\FunctionalTestFramework\Test\Objects;
+namespace tests\unit\Magento\FunctionalTestFramework\Cest\Objects;
 
 use AspectMock\Test as AspectMock;
 use Magento\FunctionalTestingFramework\DataGenerator\Handlers\DataObjectHandler;
@@ -12,7 +12,7 @@ use Magento\FunctionalTestingFramework\DataGenerator\Objects\EntityDataObject;
 use Magento\FunctionalTestingFramework\Page\Handlers\PageObjectHandler;
 use Magento\FunctionalTestingFramework\Page\Objects\ElementObject;
 use Magento\FunctionalTestingFramework\Page\Objects\PageObject;
-use Magento\FunctionalTestingFramework\Test\Objects\ActionObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\ActionObject;
 use Magento\FunctionalTestingFramework\Page\Handlers\SectionObjectHandler;
 use Magento\FunctionalTestingFramework\Page\Objects\SectionObject;
 use PHPUnit\Framework\TestCase;

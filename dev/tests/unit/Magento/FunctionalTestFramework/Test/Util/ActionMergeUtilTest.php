@@ -3,14 +3,14 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace tests\unit\Magento\FunctionalTestFramework\Test\Util;
+namespace tests\unit\Magento\FunctionalTestFramework\Cest\Util;
 
 use Magento\FunctionalTestingFramework\DataGenerator\Handlers\DataObjectHandler;
 use Magento\FunctionalTestingFramework\DataGenerator\Objects\EntityDataObject;
-use Magento\FunctionalTestingFramework\Test\Objects\ActionObject;
-use Magento\FunctionalTestingFramework\Test\Objects\TestObject;
-use Magento\FunctionalTestingFramework\Test\Util\ActionMergeUtil;
-use Magento\FunctionalTestingFramework\Test\Util\ActionObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Objects\ActionObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\TestObject;
+use Magento\FunctionalTestingFramework\Cest\Util\ActionMergeUtil;
+use Magento\FunctionalTestingFramework\Cest\Util\ActionObjectExtractor;
 use PHPUnit\Framework\TestCase;
 use tests\unit\Util\DataObjectHandlerReflectionUtil;
 

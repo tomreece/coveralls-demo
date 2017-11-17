@@ -7,11 +7,11 @@ namespace Magento\FunctionalTestingFramework\Suite\Util;
 
 use Exception;
 use Magento\FunctionalTestingFramework\Suite\Objects\SuiteObject;
-use Magento\FunctionalTestingFramework\Test\Handlers\CestObjectHandler;
-use Magento\FunctionalTestingFramework\Test\Objects\CestObject;
-use Magento\FunctionalTestingFramework\Test\Util\BaseCestObjectExtractor;
-use Magento\FunctionalTestingFramework\Test\Util\CestHookObjectExtractor;
-use Magento\FunctionalTestingFramework\Test\Util\CestObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Handlers\CestObjectHandler;
+use Magento\FunctionalTestingFramework\Cest\Objects\CestObject;
+use Magento\FunctionalTestingFramework\Cest\Util\BaseCestObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Util\CestHookObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Util\CestObjectExtractor;
 
 class SuiteObjectExtractor extends BaseCestObjectExtractor
 {

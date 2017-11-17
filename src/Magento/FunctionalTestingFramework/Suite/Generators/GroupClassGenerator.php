@@ -7,9 +7,9 @@
 namespace Magento\FunctionalTestingFramework\Suite\Generators;
 
 use Magento\FunctionalTestingFramework\Suite\Objects\SuiteObject;
-use Magento\FunctionalTestingFramework\Test\Objects\ActionObject;
-use Magento\FunctionalTestingFramework\Test\Objects\CestHookObject;
-use Magento\FunctionalTestingFramework\Test\Util\ActionObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Objects\ActionObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\CestHookObject;
+use Magento\FunctionalTestingFramework\Cest\Util\ActionObjectExtractor;
 use Magento\FunctionalTestingFramework\Util\TestGenerator;
 use Mustache_Engine;
 use Mustache_Loader_FilesystemLoader;

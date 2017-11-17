@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\FunctionalTestingFramework\Test\Util;
+namespace Magento\FunctionalTestingFramework\Cest\Util;
 
 /**
  * Class BaseCestObjectExtractor
