@@ -7,7 +7,7 @@
 -->
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="../../../../../../../../../../magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/Test/etc/testSchema.xsd">
+        xsi:noNamespaceSchemaLocation="../../../../../../../../../../magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/Cest/etc/testSchema.xsd">
     <cest name="ParameterArrayCest">
         <test name="ParameterArrayTest">
             <createData entity="simpleParamData" mergeKey="simpleDataKey"/>
