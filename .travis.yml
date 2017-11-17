@@ -5,7 +5,6 @@ php:
 install: composer install --no-interaction --prefer-source
 env:
   matrix:
-    - VERIFICATION_TOOL=copyright-check
     - VERIFICATION_TOOL=phpunit-checks
     - VERIFICATION_TOOL=static-checks
 script:
