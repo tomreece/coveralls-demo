@@ -58,9 +58,6 @@ class TestGenerator
             DIRECTORY_SEPARATOR
         );
         $this->cests = $cests;
-        $foo = new TomObject();
-        $foo->someNewPublicFunction();
-        $this->newLongFunctionToTriggerCoveralls();
     }
 
     /**
@@ -1498,6 +1495,19 @@ class TestGenerator
      */
     private function newLongFunctionToTriggerCoveralls()
     {
-
+        $num = 5;
+        $factorial = 1;
+        for ($j = $num; $j > 0; $j--) {
+            $factorial = $factorial * $j;
+        }
+        $cat = 1 + 1;
+        $dog = 1 + $cat;
+        $dog2 = 1 + $dog;
+        $dog3 = 1 + $dog2;
+        $dog4 = 1 + $dog3;
+        $foo = new TomObject();
+        $foo->someNewPublicFunction();
+        $this->newLongFunctionToTriggerCoveralls();
+        return $factorial - $dog4;
     }
 }
