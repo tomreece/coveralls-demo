@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\FunctionalTestingFramework\Test\Config\Converter\Dom;
+namespace Magento\FunctionalTestingFramework\Cest\Config\Converter\Dom;
 
 use Magento\FunctionalTestingFramework\Config\ConverterInterface;
 use Magento\FunctionalTestingFramework\Config\Dom\ArrayNodeConfig;

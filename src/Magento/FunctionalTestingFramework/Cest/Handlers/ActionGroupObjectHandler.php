@@ -3,14 +3,14 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Magento\FunctionalTestingFramework\Test\Handlers;
+namespace Magento\FunctionalTestingFramework\Cest\Handlers;
 
 use Magento\FunctionalTestingFramework\ObjectManager\ObjectHandlerInterface;
 use Magento\FunctionalTestingFramework\ObjectManagerFactory;
-use Magento\FunctionalTestingFramework\Test\Objects\ActionGroupObject;
-use Magento\FunctionalTestingFramework\Test\Objects\TestObject;
-use Magento\FunctionalTestingFramework\Test\Parsers\ActionGroupDataParser;
-use Magento\FunctionalTestingFramework\Test\Util\ActionGroupObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Objects\ActionGroupObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\TestObject;
+use Magento\FunctionalTestingFramework\Cest\Parsers\ActionGroupDataParser;
+use Magento\FunctionalTestingFramework\Cest\Util\ActionGroupObjectExtractor;
 
 /**
  * Class ActionGroupObjectHandler

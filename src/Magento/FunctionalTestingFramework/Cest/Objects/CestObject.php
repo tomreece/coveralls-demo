@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\FunctionalTestingFramework\Test\Objects;
+namespace Magento\FunctionalTestingFramework\Cest\Objects;
 
 /**
  * Class CestObject

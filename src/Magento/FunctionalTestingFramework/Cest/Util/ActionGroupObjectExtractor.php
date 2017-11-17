@@ -4,9 +4,9 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\FunctionalTestingFramework\Test\Util;
+namespace Magento\FunctionalTestingFramework\Cest\Util;
 
-use Magento\FunctionalTestingFramework\Test\Objects\ActionGroupObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\ActionGroupObject;
 
 /**
  * Class ActionGroupObjectExtractor

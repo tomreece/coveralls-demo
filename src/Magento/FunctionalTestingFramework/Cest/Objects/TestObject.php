@@ -4,11 +4,11 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\FunctionalTestingFramework\Test\Objects;
+namespace Magento\FunctionalTestingFramework\Cest\Objects;
 
-use Magento\FunctionalTestingFramework\Test\Handlers\ActionGroupObjectHandler;
-use Magento\FunctionalTestingFramework\Test\Util\ActionMergeUtil;
-use Magento\FunctionalTestingFramework\Test\Util\ActionObjectExtractor;
+use Magento\FunctionalTestingFramework\Cest\Handlers\ActionGroupObjectHandler;
+use Magento\FunctionalTestingFramework\Cest\Util\ActionMergeUtil;
+use Magento\FunctionalTestingFramework\Cest\Util\ActionObjectExtractor;
 
 /**
  * Class TestObject

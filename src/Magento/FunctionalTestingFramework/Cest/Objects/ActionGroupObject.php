@@ -4,9 +4,9 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\FunctionalTestingFramework\Test\Objects;
+namespace Magento\FunctionalTestingFramework\Cest\Objects;
 
-use Magento\FunctionalTestingFramework\Test\Util\ActionMergeUtil;
+use Magento\FunctionalTestingFramework\Cest\Util\ActionMergeUtil;
 
 /**
  * Class ActionGroupObject

@@ -4,10 +4,10 @@
  * See COPYING.txt for license details.
  */
 
-namespace tests\unit\Magento\FunctionalTestFramework\Test\Util;
+namespace tests\unit\Magento\FunctionalTestFramework\Cest\Util;
 
 use Magento\FunctionalTestingFramework\Exceptions\XmlException;
-use Magento\FunctionalTestingFramework\Test\Util\TestNameValidationUtil;
+use Magento\FunctionalTestingFramework\Cest\Util\TestNameValidationUtil;
 use PHPUnit\Framework\TestCase;
 
 class TestNameValidationUtilTest extends TestCase

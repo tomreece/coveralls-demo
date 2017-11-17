@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\FunctionalTestingFramework\Test\Parsers;
+namespace Magento\FunctionalTestingFramework\Cest\Parsers;
 
 use Magento\FunctionalTestingFramework\Config\DataInterface;
 

@@ -215,7 +215,7 @@
         </arguments>
     </virtualType>
 
-    <virtualType name="Magento\FunctionalTestingFramework\Test\Config\Dom\ArrayNodeConfig" type="Magento\FunctionalTestingFramework\Config\Dom\ArrayNodeConfig">
+    <virtualType name="Magento\FunctionalTestingFramework\Cest\Config\Dom\ArrayNodeConfig" type="Magento\FunctionalTestingFramework\Config\Dom\ArrayNodeConfig">
         <arguments>
             <argument name="assocArrayAttributes" xsi:type="array">
                 <item name="/config/cest/test/(acceptPopup|actionGroup|amOnPage|amOnUrl|appendField|assertArraySubset|attachFile|cancelPopup|checkOption|clearField|click|clickWithLeftButton|clickWithRightButton|closeTab|comment|conditionalClick|createData|deleteData|updateData|getData|dontSee|dontSeeCheckboxIsChecked|dontSeeCookie|dontSeeCurrentUrlEquals|dontSeeCurrentUrlMatches|dontSeeElement|dontSeeElementInDOM|dontSeeInCurrentUrl|dontSeeInField|dontSeeInPageSource|dontSeeInSource|dontSeeInTitle|dontSeeLink|dontSeeOptionIsSelected|doubleClick|dragAndDrop|entity|executeJS|fillField|formatMoney|grabAttributeFrom|grabCookie|grabFromCurrentUrl|grabMultiple|grabPageSource|grabTextFrom|grabValueFrom|loadSessionSnapshot|loginAsAdmin|makeScreenshot|maximizeWindow|moveBack|moveForward|moveMouseOver|openNewTab|pauseExecution|performOn|pressKey|reloadPage|resetCookie|resizeWindow|scrollTo|searchAndMultiSelectOption|see|seeCheckboxIsChecked|seeCookie|seeCurrentUrlEquals|seeCurrentUrlMatches|seeElement|seeElementInDOM|seeInCurrentUrl|seeInField|seeInFormFields|seeInPageSource|seeInPopup|seeInSource|seeInTitle|seeLink|seeNumberOfElements|seeOptionIsSelected|selectOption|setCookie|switchToIFrame|switchToNextTab|switchToPreviousTab|switchToWindow|typeInPopup|uncheckOption|unselectOption|wait|waitForAjaxLoad|waitForElement|waitForElementChange|waitForElementNotVisible|waitForElementVisible|waitForJS|waitForLoadingMaskToDisappear|waitForPageLoad|waitForText|assertArrayHasKey|assertArrayNotHasKey|assertArraySubset|assertContains|assertCount|assertEmpty|assertEquals|assertFalse|assertFileExists|assertFileNotExists|assertGreaterOrEquals|assertGreaterThan|assertGreaterThanOrEqual|assertInstanceOf|assertInternalType|assertIsEmpty|assertLessOrEquals|assertLessThan|assertLessThanOrEqual|assertNotContains|assertNotEmpty|assertNotEquals|assertNotInstanceOf|assertNotNull|assertNotRegExp|assertNotSame|assertNull|assertRegExp|assertSame|assertStringStartsNotWith|assertStringStartsWith|assertTrue|expectException|fail)" xsi:type="string">mergeKey</item>
@@ -259,18 +259,18 @@
         </arguments>
     </virtualType>
 
-    <virtualType name="Magento\FunctionalTestingFramework\Config\TestDataConverter" type="Magento\FunctionalTestingFramework\Test\Config\Converter\Dom\Flat">
+    <virtualType name="Magento\FunctionalTestingFramework\Config\TestDataConverter" type="Magento\FunctionalTestingFramework\Cest\Config\Converter\Dom\Flat">
         <arguments>
-            <argument name="arrayNodeConfig" xsi:type="object">Magento\FunctionalTestingFramework\Test\Config\Dom\ArrayNodeConfig</argument>
+            <argument name="arrayNodeConfig" xsi:type="object">Magento\FunctionalTestingFramework\Cest\Config\Dom\ArrayNodeConfig</argument>
         </arguments>
     </virtualType>
 
-    <type name="Magento\FunctionalTestingFramework\Test\Parsers\TestDataParser">
+    <type name="Magento\FunctionalTestingFramework\Cest\Parsers\TestDataParser">
         <arguments>
-            <argument name="testData" xsi:type="object">Magento\FunctionalTestingFramework\Test\Config\Data</argument>
+            <argument name="testData" xsi:type="object">Magento\FunctionalTestingFramework\Cest\Config\Data</argument>
         </arguments>
     </type>
-    <virtualType name="Magento\FunctionalTestingFramework\Test\Config\Data" type="Magento\FunctionalTestingFramework\Config\Data">
+    <virtualType name="Magento\FunctionalTestingFramework\Cest\Config\Data" type="Magento\FunctionalTestingFramework\Config\Data">
         <arguments>
             <argument name="reader" xsi:type="object">Magento\FunctionalTestingFramework\Config\Reader\TestData</argument>
         </arguments>
@@ -293,7 +293,7 @@
         </arguments>
     </virtualType>
 
-    <virtualType name="Magento\FunctionalTestingFramework\Test\Config\Dom\ActionGroupArrayNodeConfig" type="Magento\FunctionalTestingFramework\Config\Dom\ArrayNodeConfig">
+    <virtualType name="Magento\FunctionalTestingFramework\Cest\Config\Dom\ActionGroupArrayNodeConfig" type="Magento\FunctionalTestingFramework\Config\Dom\ArrayNodeConfig">
         <arguments>
             <argument name="assocArrayAttributes" xsi:type="array">
                 <item name="/config/actionGroup/(acceptPopup|amOnPage|appendField|assertArraySubset|attachFile|cancelPopup|checkOption|clearField|click|clickWithLeftButton|clickWithRightButton|closeTab|comment|conditionalClick|createData|deleteData|dontSee|dontSeeCheckboxIsChecked|dontSeeCookie|dontSeeCurrentUrlEquals|dontSeeCurrentUrlMatches|dontSeeElement|dontSeeElementInDOM|dontSeeInCurrentUrl|dontSeeInField|dontSeeInPageSource|dontSeeInSource|dontSeeInTitle|dontSeeLink|dontSeeOptionIsSelected|doubleClick|dragAndDrop|executeJS|fillField|formatMoney|grabAttributeFrom|grabCookie|grabFromCurrentUrl|grabMultiple|grabPageSource|grabTextFrom|grabValueFrom|loadSessionSnapshot|loginAsAdmin|makeScreenshot|maximizeWindow|moveBack|moveForward|moveMouseOver|openNewTab|pauseExecution|performOn|pressKey|reloadPage|resetCookie|resizeWindow|scrollTo|searchAndMultiSelectOption|see|seeCheckboxIsChecked|seeCookie|seeCurrentUrlEquals|seeCurrentUrlMatches|seeElement|seeElementInDOM|seeInCurrentUrl|seeInField|seeInFormFields|seeInPageSource|seeInPopup|seeInSource|seeInTitle|seeLink|seeNumberOfElements|seeOptionIsSelected|selectOption|setCookie|switchToIFrame|switchToNextTab|switchToPreviousTab|switchToWindow|typeInPopup|uncheckOption|unselectOption|wait|waitForAjaxLoad|waitForElement|waitForElementChange|waitForElementNotVisible|waitForElementVisible|waitForJS|waitForPageLoad|waitForText|assertArrayHasKey|assertArrayNotHasKey|assertArraySubset|assertContains|assertCount|assertEmpty|assertEquals|assertFalse|assertFileExists|assertFileNotExists|assertGreaterOrEquals|assertGreaterThan|assertGreaterThanOrEqual|assertInstanceOf|assertInternalType|assertIsEmpty|assertLessOrEquals|assertLessThan|assertLessThanOrEqual|assertNotContains|assertNotEmpty|assertNotEquals|assertNotInstanceOf|assertNotNull|assertNotRegExp|assertNotSame|assertNull|assertRegExp|assertSame|assertStringStartsNotWith|assertStringStartsWith|assertTrue|expectException|fail)" xsi:type="string">mergeKey</item>
@@ -303,18 +303,18 @@
         </arguments>
     </virtualType>
 
-    <virtualType name="Magento\FunctionalTestingFramework\Config\ActionGroupDataConverter" type="Magento\FunctionalTestingFramework\Test\Config\Converter\Dom\Flat">
+    <virtualType name="Magento\FunctionalTestingFramework\Config\ActionGroupDataConverter" type="Magento\FunctionalTestingFramework\Cest\Config\Converter\Dom\Flat">
         <arguments>
-            <argument name="arrayNodeConfig" xsi:type="object">Magento\FunctionalTestingFramework\Test\Config\Dom\ActionGroupArrayNodeConfig</argument>
+            <argument name="arrayNodeConfig" xsi:type="object">Magento\FunctionalTestingFramework\Cest\Config\Dom\ActionGroupArrayNodeConfig</argument>
         </arguments>
     </virtualType>
 
-    <type name="Magento\FunctionalTestingFramework\Test\Parsers\ActionGroupDataParser">
+    <type name="Magento\FunctionalTestingFramework\Cest\Parsers\ActionGroupDataParser">
         <arguments>
-            <argument name="actionGroupData" xsi:type="object">Magento\FunctionalTestingFramework\Test\Config\ActionGroupData</argument>
+            <argument name="actionGroupData" xsi:type="object">Magento\FunctionalTestingFramework\Cest\Config\ActionGroupData</argument>
         </arguments>
     </type>
-    <virtualType name="Magento\FunctionalTestingFramework\Test\Config\ActionGroupData" type="Magento\FunctionalTestingFramework\Config\Data">
+    <virtualType name="Magento\FunctionalTestingFramework\Cest\Config\ActionGroupData" type="Magento\FunctionalTestingFramework\Config\Data">
         <arguments>
             <argument name="reader" xsi:type="object">Magento\FunctionalTestingFramework\Config\Reader\ActionGroupData</argument>
         </arguments>
@@ -374,7 +374,7 @@
         </arguments>
     </virtualType>
 
-    <virtualType name="Magento\FunctionalTestingFramework\Config\SuiteDataConverter" type="Magento\FunctionalTestingFramework\Test\Config\Converter\Dom\Flat">
+    <virtualType name="Magento\FunctionalTestingFramework\Config\SuiteDataConverter" type="Magento\FunctionalTestingFramework\Cest\Config\Converter\Dom\Flat">
         <arguments>
             <argument name="arrayNodeConfig" xsi:type="object">Magento\FunctionalTestingFramework\Suite\Config\Dom\SuiteArrayNodeConfig</argument>
         </arguments>

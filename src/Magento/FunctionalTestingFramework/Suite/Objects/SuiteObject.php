@@ -5,8 +5,8 @@
  */
 namespace Magento\FunctionalTestingFramework\Suite\Objects;
 
-use Magento\FunctionalTestingFramework\Test\Objects\CestHookObject;
-use Magento\FunctionalTestingFramework\Test\Objects\CestObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\CestHookObject;
+use Magento\FunctionalTestingFramework\Cest\Objects\CestObject;
 
 /**
  * Class SuiteObject
