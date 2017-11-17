@@ -1,0 +1,69 @@
+<?php
+namespace Magento\AcceptanceTest\_generated\Backend;
+
+use Magento\FunctionalTestingFramework\AcceptanceTester;
+use Magento\FunctionalTestingFramework\DataGenerator\Handlers\DataObjectHandler;
+use Magento\FunctionalTestingFramework\DataGenerator\Persist\DataPersistenceHandler;
+use Magento\FunctionalTestingFramework\DataGenerator\Objects\EntityDataObject;
+use \Codeception\Util\Locator;
+use Yandex\Allure\Adapter\Annotation\Features;
+use Yandex\Allure\Adapter\Annotation\Stories;
+use Yandex\Allure\Adapter\Annotation\Title;
+use Yandex\Allure\Adapter\Annotation\Description;
+use Yandex\Allure\Adapter\Annotation\Parameter;
+use Yandex\Allure\Adapter\Annotation\Severity;
+use Yandex\Allure\Adapter\Model\SeverityLevel;
+use Yandex\Allure\Adapter\Annotation\TestCaseId;
+
+/**
+ */
+class PersistedReplacementCest
+{
+	/**
+	  * @var DataPersistenceHandler $createData1;
+	 */
+	protected $createData1;
+
+	public function _before(AcceptanceTester $I)
+	{
+		$I->amGoingTo("create entity that has the mergeKey: createData1");
+		$ReplacementPerson = DataObjectHandler::getInstance()->getObject("ReplacementPerson");
+		$this->createData1 = new DataPersistenceHandler($ReplacementPerson);
+		$this->createData1->createEntity();
+	}
+
+	/**
+	 * @Parameter(name = "AcceptanceTester", value="$I")
+	 * @param AcceptanceTester $I
+	 * @return void
+	 */
+	public function PersistedReplacementTest(AcceptanceTester $I)
+	{
+		$I->amGoingTo("create entity that has the mergeKey: createdData");
+		$simpleData = DataObjectHandler::getInstance()->getObject("simpleData");
+		$createdData = new DataPersistenceHandler($simpleData);
+		$createdData->createEntity();
+		$I->amGoingTo("create entity that has the mergeKey: uniqueData");
+		$UniquePerson = DataObjectHandler::getInstance()->getObject("UniquePerson");
+		$uniqueData = new DataPersistenceHandler($UniquePerson);
+		$uniqueData->createEntity();
+		$I->fillField("#selector", "StringBefore " . $createdData->getCreatedDataByName('firstname') . " StringAfter");
+		$I->fillField("#" . $createdData->getCreatedDataByName('firstname'), "input");
+		$I->dragAndDrop("#" . $createdData->getCreatedDataByName('firstname'), $createdData->getCreatedDataByName('lastname'));
+		$I->conditionalClick($createdData->getCreatedDataByName('lastname'), "#" . $createdData->getCreatedDataByName('firstname'), true);
+		$I->amOnUrl($createdData->getCreatedDataByName('firstname') . ".html");
+		$I->searchAndMultiSelectOption("#selector", [$createdData->getCreatedDataByName('firstname'), $createdData->getCreatedDataByName('lastname')]);
+		$I->fillField("#selector", "John " . $createdData->getCreatedDataByName('firstname') . " stringLiteral");
+		$I->searchAndMultiSelectOption("#selector", [$createdData->getCreatedDataByName('firstname'), "John", "stringLiteral"]);
+		$I->assertStringStartsNotWith("D", $this->createData1->getCreatedDataByName('lastname') . ", " . $this->createData1->getCreatedDataByName('firstname'), "fail");
+		$I->assertStringStartsWith("W", $uniqueData->getCreatedDataByName('firstname') . " " . $uniqueData->getCreatedDataByName('lastname'), "pass");
+		$I->assertEquals($this->createData1->getCreatedDataByName('lastname'), $this->createData1->getCreatedDataByName('lastname'), "pass");
+		$I->assertFileExists("../Data/SampleData.xml", "pass");
+		$I->assertArraySubset([$this->createData1->getCreatedDataByName('lastname'), $this->createData1->getCreatedDataByName('firstname')], [$this->createData1->getCreatedDataByName('lastname'), $this->createData1->getCreatedDataByName('firstname'), "1"], "pass");
+		$I->assertArraySubset([$uniqueData->getCreatedDataByName('firstname'), $uniqueData->getCreatedDataByName('lastname')], [$uniqueData->getCreatedDataByName('firstname'), $uniqueData->getCreatedDataByName('lastname'), "1"], "pass");
+		$I->assertArrayHasKey("lastname", ['lastname' => $this->createData1->getCreatedDataByName('lastname'), 'firstname' => $this->createData1->getCreatedDataByName('firstname')], "pass");
+		$I->assertArrayHasKey("lastname", ['lastname' => $uniqueData->getCreatedDataByName('lastname'), 'firstname' => $uniqueData->getCreatedDataByName('firstname')], "pass");
+		$I->fail($uniqueData->getCreatedDataByName('firstname') . " " . $uniqueData->getCreatedDataByName('lastname'));
+		$I->fail($this->createData1->getCreatedDataByName('firstname') . " " . $this->createData1->getCreatedDataByName('lastname'));
+	}
+}
